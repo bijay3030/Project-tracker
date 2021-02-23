@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,900&display=swap');
+// @mixin flexCenter($direction) {
+//   display: flex;
+//   justify-content: center;
+//   flex-direction: $direction ;
+  
+// }
+// $textColor:rgb(132,86,100); 
+
+// 
+$Red: hsl(0, 100%, 68%);
+// ### Neutral
+$Very-Dark-Blue: hsl(230, 29%, 20%);
+$Dark-Grayish-Blue: hsl(230, 11%, 40%);
+$Grayish-Blue: hsl(231, 7%, 65%);
+$Light-Grayish-Blue: hsl(207, 33%, 95%);
+
+ul{
+  // @extend nav;
+  display: grid;
+  grid-template-columns:  0.25fr 0.25fr  0.25fr 0.4fr   ; 
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  
+  // @include flexCenter(column);
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 2fr 2fr  ;
+  grid-auto-flow: column;
+  grid-gap:5%;
+  margin: 0% ;
+  padding: 0;
+  position: sticky;
+  align-items: center;
+}
+
+body{
+  margin: 0%;
+}
+  
+.logo{
+  justify-self: center;
+  
+}
+
+li{
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Barlow Condensed', sans-serif;
+  
+}
+
+a{
+  color: hsl(230, 11%, 40%);
+
+}
+a:hover{
+  color: hsl(231, 7%, 65%);
+
+}
+.login{
+  justify-self: center;
+}
+
+.leftContent{
+    display: grid;
+    width: 50%;
+    margin-top: 5%;
+    justify-content: center;
+    align-content: center;
+    justify-self: auto;
+}
+ 
+  h1{
+    width: 53%;
+    font-size: 18px;
+    color: hsl(231, 7%, 65%);
+    font-family: 'Barlow      Condensed', sans-serif;
+    font-weight: 400;
+    
+  }
+h1:first-child{
+    width: 55%;
+    font-size: 40px;
+    color:hsl(230, 29%, 20%);
+    font-family: 'Barlow Condensed', sans-serif;
+    height: 100px;
+    font-weight: 900;
+}
+
+.firstLine{
+  display: grid;
+  width:70%;
+  grid-template-columns: 1fr 4fr;
+}
+.new{
+  background-color:  hsl(230, 29%, 20%);
+  height: 25px;
+  width: 55px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15%;
+  font-size: 18px;
+  color:white;
+}
+.text{
+ color: hsl(231, 7%, 65%);
+ font-family: 'Barlow Condensed', sans-serif;
+ font-weight: 400;
+ letter-spacing: 5px;
+}
+.button{
+    background-color: hsl(0, 100%, 68%);
+    font-size: 18px;
+    border-radius: 5px;
+    height: 40px;
+    width: 170px;
+    color: whitesmoke;
+    border-color: wheat;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+}
+
+span{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 400;
+  letter-spacing: 5px;
+  color: hsl(231, 7%, 65%);
+}
+
+.buttonSection{
+  display: grid; 
+  grid-template-columns: 1fr 1fr;
+ 
+}
+.preview{
+  justify-self: start;
+  align-self: center;
+  margin-left: 0%;
+}
+
+ .leftContent{
+  display :grid;
+   width: 150%; 
+ }
+ .navbar{
+   background-color:$Light-Grayish-Blue;
+ }
+
+ .mid-container{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+ 
+ }
+ 
+.imageCover{
+  max-width: 56%;
+  overflow: hidden;
+  position: relative;
+  left: 29%;
+  border-radius: 0% 0 0 8%;
+  background-color:$Light-Grayish-Blue;
+  padding-left: 15%;
+   
+}
+
+.imageCover img{
+ max-width: initial;
+ position: fixed;
+}
+
+
