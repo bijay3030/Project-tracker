@@ -13,12 +13,12 @@
   <header class="header">
     <nav class="grid grid-gt-c">
       <a class="header_logo" href="/"><img src="./IMAGES/logo.svg" alt="logo" /></a>
-      <a href="#" class="header_menu">
+      <a href="#" class="header_menu" onclick="toggleMenu()">
         <span></span>
         <span></span>
         <span></span>
       </a>
-      <div class="header_links">
+      <div class="header_links active" id="menu">
         <a href="#">PRODUCT</a>
         <a href="#">FEATURE</a>
         <a href="#">PRICING</a>
@@ -50,6 +50,12 @@
     </div>
 
   </div>
+  <script>
+    function toggleMenu() {
+      console.log("hello");
+      document.querySelector('#menu').classList.toggle('active');
+    }
+  </script>
 
 </body>
 
